@@ -1,0 +1,24 @@
+#test commit
+Django==1.11
+MySQL-python
+Pillow
+django_extensions
+amqp
+celery
+djangorestframework
+requests
+ipython
+jsonpath-rw
+django-gfklookupwidget
+stripe
+django-push-notifications
+django-rest-auth
+django-allauth
+django-cors-headers
+ipython
+django-configurations==2.0
+mock
+kombu
+psutil
+shapely
+django-mysql

@@ -1,0 +1,20 @@
+Data change for {{instance.player.Name}}.
+
+{{key}}
+Value was: {{was}}
+Value is now: {{now}}
+
+We are in week {{current_week|stringformat:"d"}} of a session that spans NFL 2015 weeks {{pp.threepak.week1}} and {{pp.threepak.week2}}.
+
+{{instance.player.Name}} Fantasy Points: {{instance.FantasyPointsFanDuel}}
+
+This note intended for {{pp.threepak.user.username}}
+
+
+
+
+
+
+
+
+

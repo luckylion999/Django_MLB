@@ -1,0 +1,22 @@
+<html>
+    <table  style="border: 1px solid black;" >
+        <tr style="font-weight: bold">
+            <td  style="border: 1px solid black;" >Username</td>
+            <td  style="border: 1px solid black;">Email</td>
+            <td  style="border: 1px solid black;">Date Joined</td>
+            <td  style="border: 1px solid black;">Picked players?</td>
+            <td  style="border: 1px solid black;">Session?</td>
+            <td  style="border: 1px solid black;">Paid?</td>
+        </tr>
+        {% for u in data %}
+            <tr>
+                <td  >{{u.user.username}}</td>
+                <td  >{{u.user.email}}</td>
+                <td  >{{u.joined}}</td>
+                <td  >{{u.picked_players}}</td>
+                <td  >{{u.contests}}</td>
+                <td  >{{u.paid}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</html>

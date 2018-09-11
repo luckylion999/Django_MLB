@@ -1,0 +1,168 @@
+{% load humanize %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse">
+    <tbody>
+        <tr>
+            <td align="center" valign="top" style="background-color:#fafafa;border-top:0;border-bottom:0;padding-top:9px;padding-bottom:9px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important">
+                <tbody>
+                    <tr>
+                        <td valign="top"></td>
+                    </tr>
+                </tbody>
+            </table></td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="background-color:#cccccc;border-top:0;border-bottom:0;padding-top:9px;padding-bottom:0">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" style="padding:9px">
+                                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center"><img align="center" alt=""
+                                                src="https://2016.3pakapi.net/{{pak.user.profile.customer.logo_large.url}}" width="300px" style="max-width:300px;padding-bottom:0;display:inline!important;vertical-align:bottom;border:0;min-height:auto;outline:none;text-decoration:none"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table></td>
+                                </tr>
+                            </tbody>
+                        </table></td>
+                    </tr>
+                </tbody>
+            </table></td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="background-color:#ffffff;border-top:0;border-bottom:0;padding-top:0;padding-bottom:0">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" style="padding-top:9px">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;min-width:100%;border-collapse:collapse" width="100%">
+                                        <tbody>
+                                            <tr>
+
+                                                <td valign="top" style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:break-word;color:#202020;font-family:Helvetica;font-size:16px;line-height:150%;text-align:left">
+                                                <p dir="ltr" style="margin:10px 0;padding:0;color:#202020;font-family:Helvetica;font-size:16px;line-height:150%;text-align:left">
+                                                    &nbsp;
+                                                </p><h1>3pak Weekly Results</h1><h3>Hi {{pak.user.username}}!</h3>
+                                                <p>
+                                                    We hope you enjoyed week {{myweek|stringformat:"i"}} of <b>3PAK</b> session weeks {{pak.session_weeks_str}} for <b>{{pak.user.profile.customer.happy_name}}! </b>
+                                                <p>
+                                                    Let's see how your pak did this week.
+                                                    <table>
+                                                        {% for p in contest_paks %}
+                                                        <tr>
+                                                            <td>{{p.user.username}}</td>
+                                                            <td style="padding: 0 1em 0 1em">score: {{ p.week_1_score_str }}</td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                    </table>
+                                                </p>
+                                                </p>
+                                                <br>
+                                                <p>Some reminders before next week’s game:</p>
+                                                <ul>
+                                                    <li>New player salaries and next week's schedule have been downloaded.  You can update your Pak as early as today.</li>
+                                                    <li>If you change your pak, remember Thursday night players have to be selected 15 minutes prior to Thursday kickoff.
+                                                      All other player selection is open until 15 minutes prior to last game kickoff on Sunday.  All player changes must remain within salary cap.
+
+                                                    <li>Double check that none of your players are on their bye week or injured.</li>
+                                                </ul>
+                                                <p>
+                                                    Ready to play again? <a href="https://apps.3pak.com/?play={{pak.user.profile.customer.name}}">Draft a new pack now!</a>
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    We welcome any feedback you may have, so feel free to send us your comments at support@play3pak.com.
+                                                </p>
+                                            </tr>
+                                        </tbody>
+                                    </table></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse;table-layout:fixed!important">
+                            <tbody>
+                                <tr>
+                                    <td style="min-width:100%;padding:18px">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-top-width:2px;border-top-style:solid;border-top-color:#eaeaea;border-collapse:collapse">
+                                        <tbody>
+                                            <tr>
+                                                <td><span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table></td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="background-color:#ffffff;border-top:0;border-bottom:2px solid #eaeaea;padding-top:0;padding-bottom:9px">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" style="border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td valign="top"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" style="border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td valign="top"></td>
+                                </tr>
+                            </tbody>
+                        </table></td>
+                    </tr>
+                </tbody>
+            </table></td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="background-color:#b4b4b4;border-top:0;border-bottom:0;padding-top:9px;padding-bottom:9px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;max-width:600px!important">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" style="padding:9px">
+                                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width:100%;border-collapse:collapse">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top" style="padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;text-align:center"><a href="http://3pak.us12.list-manage.com/track/click?u=f4b6ef11694a4e22f57ad483e&amp;id=75606e28e7&amp;e=86e85e4922" title="" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://3pak.us12.list-manage.com/track/click?u%3Df4b6ef11694a4e22f57ad483e%26id%3D75606e28e7%26e%3D86e85e4922&amp;source=gmail&amp;ust=1474486663212000&amp;usg=AFQjCNFlcOv_2JEhsT9llieb12EcboKBUQ"> <img align="center" alt="" src="http://2016.3pakapi.net/media/customer_assets/BigLogo.png" width="314" style="max-width:314px;padding-bottom:0;display:inline!important;vertical-align:bottom;border:0;min-height:auto;outline:none;text-decoration:none"> </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+

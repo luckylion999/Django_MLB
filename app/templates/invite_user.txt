@@ -1,0 +1,7 @@
+{{ user }} just challenged you to compete against them on 3PAK!
+
+Do you have what it takes?
+
+Visit {{site}} to set things straight (or at least win some sweet prizes)
+
+Good Luck!

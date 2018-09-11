@@ -1,0 +1,15 @@
+
+Session summary for my picks:
+
+{% for p in pak.pick_set.all %}
+    Pick: {{p.content_object}}
+    Session: {{p.session_score}}
+{% endfor  %}
+
+We are in week "{{current_week|stringformat:"d"}}" of a session that spans NFL 2015 weeks {{pak.week1}} and {{pak.week2}}.
+
+Your total fantasy score for week {{current_week}}: {{pak.total_week_score}}
+Your total fantasy score for session : {{pak.total_session_score}}
+
+This note is intended for {{pak.user.username}}
+

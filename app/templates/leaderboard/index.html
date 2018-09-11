@@ -1,0 +1,478 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3pak</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KW37PGQ');</script>
+	<!-- End Google Tag Manager --> 
+    <style>
+        page {
+            background-color: black;
+        }
+        @font-face {
+            font-family: 'Knockout';
+            src: url('{% static "font/knockout-htf-47-bantamweight-1361516729.ttf" %} ');
+        }
+        /* open-sans-regular - latin */
+        @font-face {
+            font-family: 'Open Sans bold';
+            src: url('{% static "font/open-sans.bold.ttf" %}');
+        }
+        @font-face {
+            font-family: 'Open Sans semibold';
+            src: url('{% static "font/open-sans.semibold.ttf" %}');
+        }
+        @font-face {
+            font-family: 'Georgia';
+            src: url('{% static "font/georgia.ttf" %}');
+        }
+        *{
+            font-family: "Open Sans semibold";
+            letter-spacing: 1px;
+        }
+        html, body {
+            height:100%;
+            background-color: black;
+        }
+        .header {
+            height: 118px;
+            background-color: {{ profile.color_primary|default:"#e8e8e8" }};
+            color: {{ profile.color_3|default:"#ececec" }};
+            overflow: hidden;
+        }
+        .row.header {
+            background: linear-gradient(90deg, {{ profile.color_lhb }} 50%, {{ profile.color_rhb }} 50%);
+        }
+        .adv {
+            background: linear-gradient(90deg, {{ profile.color_lhb_2|default:"#111524" }} 50%, {{ profile.color_rhb_2|default:"#e4e4e4" }} 50%);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            height: 118px;
+            width: 100%;
+        }
+        {% if profile.page_ad %}
+        
+        .page_ad-overlay {
+            background: {{ profile.page_ad_background_style|default:"#000" }};
+            display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+        }
+        .page_ad-overlay img {
+            flex-shrink: 1;
+			width: 70%;
+			min-height: 100%
+        }
+        {% endif %}
+        .row a.background-header img {
+            display:block;
+            margin:auto;
+        }
+        #ad-header-1 {
+            display: none;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: 0;
+            height: 118px;
+            outline: 0;
+        }
+        .header-left {
+            height: 118px;
+            background: url('{% if profile.header_background %}{{ profile.header_background.url }}{% else %}{% static "img/header.png" %}{% endif %}');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header-right {
+            padding: 5px 30px;
+            height: 118px;
+        }
+        .header-right img {
+            max-height: 108px;
+            max-width: 250px;
+        }
+        .text_header{
+            font-family: Knockout;
+            margin: 0;
+            font-size: 60px;
+            color: {{ profile.color_3|default:"#ececec" }};
+            padding: {{ profile.header_title_padding|default:0 }};
+            font-weight: 100;
+            letter-spacing: 5px;
+        }
+        .header-title-left {
+            font-size: 60px;
+            color: {{ profile.color_3|default:"#ececec" }};
+            font-family: Georgia;
+            font-weight: normal;
+            padding: {{ profile.header_title_padding|default:0 }};
+            letter-spacing: 0;
+            float: right;
+        }
+        .header-title-right {
+            font-size: 30px;
+            color: {{ profile.color_3|default:"#ececec" }};
+            font-family: Georgia;
+            font-weight: normal;
+            padding: {{ profile.header_title_2_padding|default:0 }};
+            letter-spacing: 0;
+            float: left;
+            line-height: 30px;
+        }
+        .wrap-content{
+            height: 100%;
+            border-top: solid 5px {{ profile.color_4|default:"#646870" }};
+            background-color: {{ profile.color_3|default:"#fff" }};
+        }
+        .header_wrap{
+            padding: 20px 0;
+        }
+        .content-wrap {
+            margin-bottom: 300px;
+        }
+        .box_img{
+            display: inline-block;
+            border-right: solid 2px #b7b7b7;
+            padding-right: 20px;
+        }
+        .box_img img {
+            max-height: 75px;
+        }
+        h2{
+            font-family:"Open Sans bold" ;
+            display: inline-block;
+            color: {{ profile.color_6|default:"#2c2f34" }};
+            font-size: 36px;
+            font-weight: 700;
+            padding-left: 20px;
+        }
+        p{
+            font-family:"Open Sans bold" ;
+            padding-left: 18px;
+            display: inline-block;
+            color: {{ profile.color_7|default:"#4e535c" }};
+            font-size: 24px;
+            font-weight: 700;
+        }
+        table{
+            margin-bottom: 35px;
+        }
+        table tr th {
+            font-family: "Open Sans bold";
+            font-weight: 700;
+            font-size: 18px;
+            color: {{ profile.color_secondary|default:"#274F8b" }};
+            padding: 40px 0 20px 40px;
+        }
+        .total{
+            text-align: center;
+            font-family: "Open Sans bold";
+            font-weight: 700;
+            font-size: 18px;
+            color: #274F8b;
+            padding: 40px 0px 20px 0px;
+        }
+        table td{
+            text-align: center;
+            border: solid #d1d1d1 2px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c2f34;
+            padding: 22px 30px 22px 30px;
+        }
+        .right_part{
+            text-align: center;
+            border: solid #d1d1d1 2px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c2f34;
+            padding: 22px 24px 22px 24px;
+        }
+        hr{
+            margin: 0px;
+            border: 1px solid #d1d1d1;
+        }
+        .userName{
+            text-align: inherit;
+            color: {{ profile.color_secondary|default:"#2e5898" }};
+            font-size: 20px;
+            font-weight: 600;
+            padding: 22px 144px 22px 40px;
+        }
+        .totalPts{
+            background-color: {{ profile.color_5|default:"#dcdcdc" }};
+            color: #2c2f34;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 22px 40px 22px 41px;
+        }
+        .news {
+            white-space: nowrap;
+            font-size: 300%;
+            padding: 1em;
+            color: white;
+            font-size: 120%;
+            position: relative;
+            width: 400%;
+            left: -120%;
+            background-color: black;
+			-webkit-animation: scroll 50s infinite linear;;
+			-moz-animation: scroll 50s infinite linear;
+			-o-animation: scroll 50s infinite linear;
+			animation: scroll 50s infinite linear;
+        }
+        span.less {
+            font-weight: normal;
+            color: gray;
+        }
+        @keyframes scroll{
+		0%   {left: -100%;}
+		100% {left: -300%;}
+		}
+		@-webkit-keyframes scroll{
+		0%   {left: -100%;}
+		100% {left: -300%;}
+		}
+        .footerArea {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: url('{% static "img/background-footer.png" %}');
+            border-top: solid 5px #646870;
+            padding: 5px 0;
+        }
+        .footer img {
+            margin: 20px 0;
+            padding-right: 20px;
+            border-right: solid 2px #b7b7b7;
+        }
+        .text_footer{
+            margin: 20px 0;
+            padding: 0;
+            text-align: right;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+        }
+        .text_foot{
+            margin: 20px 0;
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+        }
+        
+		@keyframes spinnerRotate
+		{
+			from{ transform:rotate(0deg);}
+			to{ transform:rotate(360deg);}
+		}
+		.removed-via-bill-spin{
+			animation-name: spinnerRotate;
+			animation-duration: .5s;
+			animation-iteration-count: 3;
+			animation-timing-function: linear;
+		}
+		.userName {
+			white-space: nowrap;
+		}
+
+        
+    </style>
+    {% if profile.advertisement and profile.advertisement_2 %}
+    <script>
+        function rotateAdv(){
+        	if ( $('#ad-header-1').length ) {
+				$("#ad-header-1").delay(5000).slideDown(1500).delay(5000).fadeOut(1500, function(){rotateAdv();});
+				$('.adv').delay(5000).fadeTo(3000, 1).delay(3500).fadeTo(1000, 0);
+        	}
+        }
+        $(document).ready(function(){ rotateAdv();});
+    </script>
+    {% endif %}
+    {% if profile.page_ad %}
+    <script>
+        function rotatePageAd(){
+            //$('.page_ad-overlay').delay(15000).fadeIn(500).delay(15000).fadeOut(500, function(){location.reload();});
+            if ($(".header").is(":visible")){
+				$('.header').hide();
+				$('.wrap-content').hide();
+				$('.page_ad-overlay').show();
+            } else {
+				$('.header').show();
+				$('.wrap-content').show();
+				$('.page_ad-overlay').hide();
+			    setInterval(function(){ window.location.reload(); }, 14000);
+            } 
+        }
+        $(document).ready(function(){
+            setInterval(function(){ rotatePageAd() }, 15000);
+			//$('.header').hide();
+			//$('.wrap-content').hide();
+			//$('.page_ad-overlay').show();
+        });
+    </script>
+    {% endif %}
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW37PGQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div style="display:none">{{tms}}</div>
+    <div class="container-fluid header">
+        {% if profile.advertisement or profile.advertisement_2 %}
+            <div class="row header">
+            <div class="adv"></div>
+            {% if profile.leader_header_advertisement %}
+                <a class='background-header' >
+                    <img class="ad-header" id="ad-header-0" src="{{ profile.leader_header_advertisement.url }}"/>
+                </a>
+            {% endif %}
+            {% if profile.leader_header_advertisement_2 %}
+                <a >
+                    <img class="ad-header" id="ad-header-1" src="{{ profile.leader_header_advertisement_2.url }}"/>
+                </a>
+            {% endif %}
+            </div>
+        {% else %}
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 header-left">
+                  {% if profile.header_title_2 %}
+                      <div class="row">
+                      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"><span class="header-title-left">{{ profile.header_title }}</span></div>
+                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><span class="header-title-right">{{ profile.header_title_2|safe }}</span></div>
+                      </div>
+                  {% else %}
+                      <p class="text_header">{{ profile.header_title }}</p>
+                  {% endif %}
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 hidden-xs header-right">{% if profile.logo_large %}<img class="image-responsive" src='{{profile.logo_large.url}}'>{% endif %}</div>
+            </div>
+        {% endif %}
+    </div>
+    {% if profile.page_ad %}
+    <div class="page_ad-overlay" style="display:none"><img class="img-responsive" src="{{ page_ad_url }}"></div>
+    {% endif %}
+    <div class="wrap-content">
+        <div class="container header_wrap">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box_img">
+                        <img src='{% if profile.logo_small %}{{ profile.logo_small.url }}{% else %}{% static "img/Logo.png" %}{% endif %}'>
+                    </div>
+                    <h2>{{ profile.subtitle|default:'Fantasy Football Leaderboard' }}</h2>
+                    {% if contest %}
+                         <p>
+                         {{contest.get_season_type}} WEEKS <h2>{{contest.nfl_weeks_str }}</h2>
+                        </p>
+                    {% else %}
+                         Waiting for players... 
+                    {% endif %}
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container content-wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th class="total">TOTAL PTS</th>
+                            <th>USER NAME:
+                            
+                            </th>
+                        </tr>
+						{% for p in top_five %}
+                        <tr>
+                            <td>{{p.position}}</td>
+                            <td class="totalPts">{{p.total_pts}}</td>
+                            <td class="userName">
+                           		{{p.username}}
+								{% for badge, val in p.badges.items %}
+									{% if badge == "repeat_user" %}
+										<img src="{{val}}" style="height : 15px; width: 15px;" alt="" class="spin" >
+									{% else %}
+										<img src="{{val}}" style="height : 15px; width: 15px;" alt="" >
+									{% endif %}
+								{% endfor %}
+							</td>
+                        </tr>
+						{% endfor  %}
+                    </table>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th class="total">TOTAL PTS</th>
+                            <th>USER NAME:</th>
+                        </tr>
+						{% for p in top_to_ten %}
+                        <tr>
+							<td>{{p.position}}</td>
+							<td class="totalPts">{{p.total_pts}}</td>
+                            <td class="userName">
+                           		{{p.username}}
+								{% for badge, val in p.badges.items %}
+									{% if badge == "repeat_user" %}
+										<img src="{{val}}" style="height : 15px; width: 15px;" alt="" class="spin" >
+									{% else %}
+										<img src="{{val}}" style="height : 15px; width: 15px;" alt="" >
+									{% endif %}
+								{% endfor %}
+                            </td>
+                        </tr>
+						{% endfor  %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footerArea">
+		<div class="footer">
+			<div class="news">
+			   {{news|safe}} 
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+						<img src='{% static "img/logo-footer.png" %}'>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-7 col-lg-7">
+						<p class="text_foot">{{ profile.footer_text|default:'Play for Free, Win Cool Swag' }}</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<p class="text_footer">www.3PAK.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

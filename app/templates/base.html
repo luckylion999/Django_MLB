@@ -1,0 +1,57 @@
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,300italic,400italic,600italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300" rel="stylesheet" type="text/css">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+        html {
+       		background-color: black;
+        }
+        body, html {
+        	padding: 0;
+        	margin: 0;
+        	border: 0; 
+       		font-size: 1.5em;
+       		line-height: 1.5em;
+       		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;	
+         	width: 100%;
+        }
+        body{
+         	background-color: white;
+        }
+        .center {
+         	margin: auto 0 auto 0;
+       		max-width: 738px;
+        } 
+        button, input {
+       		font-size: 1em;
+       		line-height: 1.5em;
+       		padding: .5em;
+        }
+        .head {
+        	width: 100%;
+        	padding: 1em;
+        	background-color: black;
+        }
+        .head img {
+        	height: 1em;
+        }
+        .content{
+       		margin: 1em;
+        }
+        </style>
+</head>
+
+<body >
+	<div class="center">
+	<div class='head'>
+		<img src="http://3pak.com/wp-content/themes/3pak-theme/library/images/3pak-logo.png">
+	</div>
+	<div class='content'>
+	    {% block content %}
+        {% endblock %}
+	</div>
+	</div>
+</body></html>

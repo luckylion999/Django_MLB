@@ -1,0 +1,12 @@
+{% load humanize %}
+3pak Session Results
+
+We hope you enjoyed this session of 3pak! Let's look at how your pak did this Session.
+
+
+These were the top performers.
+
+{% for w in winners %}
+    {{w.user.username}} placed {{w.final_place|ordinal}} with {{w.final_print_score}} points and wins ???.
+{% endfor  %}
+

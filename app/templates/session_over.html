@@ -1,0 +1,49 @@
+{% load humanize %}
+<h2><u>3pak Session Results </u></h2>
+
+<p>
+    We hope you enjoyed this session of 3pak! Let's look at how your pak did this Session.
+</p>
+
+
+<p>
+These were the top performers.
+</p>
+<table>
+    <tr>
+        <th>Nickname</th>
+        <th>Placement</th>
+        <th>Points</th>
+        <th>Wins</th>
+    </tr>
+{% for w in winners %}
+    <tr>
+        <td>{{w.user.username}}</th>
+        <th>{{w.final_place|ordinal}}</th>
+        <th>{{w.final_print_score}}</th>
+        <!--th>{{w.final_win_str}}</th-->
+    </tr>
+{% endfor  %}
+</table>
+
+<p>
+    If your team finished high enough to receive a payout, you'll see a payment issued back to your card.
+</p>
+
+<!--p>
+    We have <b>new features</b> for the new session that we're excited about and think you’ll really enjoy:
+</p>
+<ul>
+    <li><b>Challenge mode is now available!</b> You can challenge a friend in a head-to-head match. Challenge mode works just like it sounds: Challenge a friend in a two-player contest -- winner take all -- to finally settle who is the better player.</li>
+    <li>
+        <b>This session is a charity session benefitting the USO.</b> 3pak is covering all payouts so that 100% of all user fees will directly benefit the USO. At 3pak, we believe it’s important to give back and we'll be doing several of these types of sessions. Click here for additional information about the USO.
+    </li>
+</ul-->
+
+<p>
+    Draft your pak now! You can always update it later.
+</p>
+
+<p>
+We welcome any feedback you may have, so feel free to send us your comments at support@play3pak.com.
+</p>

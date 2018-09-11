@@ -1,0 +1,1519 @@
+[
+{
+    "fields": {
+        "username": "devin",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-10-01T19:08:01",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$NbOEyKwbtWfR$edgI27Ml2h6zdoIojv0VZrmWizL6pow2WEYsdwu2e00=",
+        "email": "devin@918.software",
+        "date_joined": "2015-09-08T20:52:54"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "username": "tony@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "change_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "delete_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "add_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "change_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "delete_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "add_game",
+                "app",
+                "game"
+            ],
+            [
+                "change_game",
+                "app",
+                "game"
+            ],
+            [
+                "delete_game",
+                "app",
+                "game"
+            ],
+            [
+                "add_league",
+                "app",
+                "league"
+            ],
+            [
+                "change_league",
+                "app",
+                "league"
+            ],
+            [
+                "delete_league",
+                "app",
+                "league"
+            ],
+            [
+                "add_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "change_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "delete_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "add_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "change_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "delete_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "add_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "change_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "delete_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "add_player",
+                "app",
+                "player"
+            ],
+            [
+                "change_player",
+                "app",
+                "player"
+            ],
+            [
+                "delete_player",
+                "app",
+                "player"
+            ],
+            [
+                "add_team",
+                "app",
+                "team"
+            ],
+            [
+                "change_team",
+                "app",
+                "team"
+            ],
+            [
+                "delete_team",
+                "app",
+                "team"
+            ],
+            [
+                "add_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "change_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "delete_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "add_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "change_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "delete_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "add_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "change_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "delete_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ]
+        ],
+        "password": "pbkdf2_sha256$20000$NL7lzgu60ANQ$B+VmK3LCgt0PAXuNXyUCVwBcFhlnMQQv7pMZi1EMWu0=",
+        "email": "",
+        "date_joined": "2015-09-18T20:36:57"
+    },
+    "model": "auth.user",
+    "pk": 2
+},
+{
+    "fields": {
+        "username": "ryan@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "change_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "delete_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "add_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "change_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "delete_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "add_game",
+                "app",
+                "game"
+            ],
+            [
+                "change_game",
+                "app",
+                "game"
+            ],
+            [
+                "delete_game",
+                "app",
+                "game"
+            ],
+            [
+                "add_league",
+                "app",
+                "league"
+            ],
+            [
+                "change_league",
+                "app",
+                "league"
+            ],
+            [
+                "delete_league",
+                "app",
+                "league"
+            ],
+            [
+                "add_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "change_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "delete_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "add_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "change_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "delete_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "add_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "change_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "delete_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "add_player",
+                "app",
+                "player"
+            ],
+            [
+                "change_player",
+                "app",
+                "player"
+            ],
+            [
+                "delete_player",
+                "app",
+                "player"
+            ],
+            [
+                "add_team",
+                "app",
+                "team"
+            ],
+            [
+                "change_team",
+                "app",
+                "team"
+            ],
+            [
+                "delete_team",
+                "app",
+                "team"
+            ],
+            [
+                "add_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "change_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "delete_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "add_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "change_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "delete_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "add_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "change_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "delete_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ]
+        ],
+        "password": "pbkdf2_sha256$20000$UCs2uWA8lBHF$UFovf7Dk54By3RuVObqE45AlgJg8s5ehtmSnihBbFYQ=",
+        "email": "",
+        "date_joined": "2015-09-18T20:37:44"
+    },
+    "model": "auth.user",
+    "pk": 3
+},
+{
+    "fields": {
+        "username": "bill.nelson@spinvestment.net",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "change_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "delete_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "add_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "change_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "delete_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "add_game",
+                "app",
+                "game"
+            ],
+            [
+                "change_game",
+                "app",
+                "game"
+            ],
+            [
+                "delete_game",
+                "app",
+                "game"
+            ],
+            [
+                "add_league",
+                "app",
+                "league"
+            ],
+            [
+                "change_league",
+                "app",
+                "league"
+            ],
+            [
+                "delete_league",
+                "app",
+                "league"
+            ],
+            [
+                "add_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "change_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "delete_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "add_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "change_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "delete_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "add_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "change_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "delete_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "add_player",
+                "app",
+                "player"
+            ],
+            [
+                "change_player",
+                "app",
+                "player"
+            ],
+            [
+                "delete_player",
+                "app",
+                "player"
+            ],
+            [
+                "add_team",
+                "app",
+                "team"
+            ],
+            [
+                "change_team",
+                "app",
+                "team"
+            ],
+            [
+                "delete_team",
+                "app",
+                "team"
+            ],
+            [
+                "add_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "change_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "delete_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "add_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "change_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "delete_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "add_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "change_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "delete_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ]
+        ],
+        "password": "pbkdf2_sha256$20000$dQhr2ZKOMZqs$wYEiTifeeNPhXlpqyBkzDchEpOp2WJD9JOMFKtXoX04=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:12"
+    },
+    "model": "auth.user",
+    "pk": 4
+},
+{
+    "fields": {
+        "username": "dan@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "change_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "delete_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "add_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "change_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "delete_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "add_game",
+                "app",
+                "game"
+            ],
+            [
+                "change_game",
+                "app",
+                "game"
+            ],
+            [
+                "delete_game",
+                "app",
+                "game"
+            ],
+            [
+                "add_league",
+                "app",
+                "league"
+            ],
+            [
+                "change_league",
+                "app",
+                "league"
+            ],
+            [
+                "delete_league",
+                "app",
+                "league"
+            ],
+            [
+                "add_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "change_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "delete_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "add_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "change_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "delete_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "add_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "change_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "delete_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "add_player",
+                "app",
+                "player"
+            ],
+            [
+                "change_player",
+                "app",
+                "player"
+            ],
+            [
+                "delete_player",
+                "app",
+                "player"
+            ],
+            [
+                "add_team",
+                "app",
+                "team"
+            ],
+            [
+                "change_team",
+                "app",
+                "team"
+            ],
+            [
+                "delete_team",
+                "app",
+                "team"
+            ],
+            [
+                "add_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "change_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "delete_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "add_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "change_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "delete_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "add_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "change_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "delete_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ]
+        ],
+        "password": "pbkdf2_sha256$20000$UO6eEp52M8a3$I32PUMtYf8Hw/FIOfGXWO9fAGez++kiN9zt+Bq+bYgE=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:33"
+    },
+    "model": "auth.user",
+    "pk": 5
+},
+{
+    "fields": {
+        "username": "devin@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "change_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "delete_contest",
+                "app",
+                "contest"
+            ],
+            [
+                "add_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "change_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "delete_defenseteamgame",
+                "app",
+                "defenseteamgame"
+            ],
+            [
+                "add_game",
+                "app",
+                "game"
+            ],
+            [
+                "change_game",
+                "app",
+                "game"
+            ],
+            [
+                "delete_game",
+                "app",
+                "game"
+            ],
+            [
+                "add_league",
+                "app",
+                "league"
+            ],
+            [
+                "change_league",
+                "app",
+                "league"
+            ],
+            [
+                "delete_league",
+                "app",
+                "league"
+            ],
+            [
+                "add_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "change_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "delete_offenseplayergame",
+                "app",
+                "offenseplayergame"
+            ],
+            [
+                "add_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "change_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "delete_pick",
+                "app",
+                "pick"
+            ],
+            [
+                "add_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "change_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "delete_pickhistory",
+                "app",
+                "pickhistory"
+            ],
+            [
+                "add_player",
+                "app",
+                "player"
+            ],
+            [
+                "change_player",
+                "app",
+                "player"
+            ],
+            [
+                "delete_player",
+                "app",
+                "player"
+            ],
+            [
+                "add_team",
+                "app",
+                "team"
+            ],
+            [
+                "change_team",
+                "app",
+                "team"
+            ],
+            [
+                "delete_team",
+                "app",
+                "team"
+            ],
+            [
+                "add_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "change_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "delete_threepak",
+                "app",
+                "threepak"
+            ],
+            [
+                "add_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "change_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "delete_timeframe",
+                "app",
+                "timeframe"
+            ],
+            [
+                "add_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "change_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "delete_tournamentspec",
+                "app",
+                "tournamentspec"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ]
+        ],
+        "password": "pbkdf2_sha256$20000$JdxdVYvnsDsn$dBb38TCCCq1bp5bcJenMTP91fWhCIIvqMMRkgW6pNpY=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:47"
+    },
+    "model": "auth.user",
+    "pk": 6
+},
+{
+    "fields": {
+        "username": "testinguser@test.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "xx",
+        "email": "testinguser@test.com",
+        "date_joined": "2015-09-30T18:40:17"
+    },
+    "model": "auth.user",
+    "pk": 7
+},
+{
+    "fields": {
+        "username": "testing@test.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "test",
+        "email": "testing@test.com",
+        "date_joined": "2015-09-30T18:41:07"
+    },
+    "model": "auth.user",
+    "pk": 8
+},
+{
+    "fields": {
+        "username": "1yoyobing@test.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "xx",
+        "email": "1yoyobing@test.com",
+        "date_joined": "2015-09-30T18:42:40"
+    },
+    "model": "auth.user",
+    "pk": 9
+}
+]

@@ -1,0 +1,7 @@
+*.pyc
+venv
+localonly
+*.log
+.idea/
+settings_local.py
+*~

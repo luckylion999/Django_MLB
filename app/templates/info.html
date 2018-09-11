@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                padding: .5em;
+            }
+        </style>
+    </head>
+    <h3>Reported in Central time</h3>
+    <table>
+        <tr>
+            <th>Player Game</th>
+            <th>Points Updated</th>
+            <th>Points</th>
+        </tr>
+    {% for l in last_updated %}
+    <tr>
+        <td>{{l}} </td> 
+        <td>{{l.updated}} </td>
+        <td>{{l.FantasyPointsFanDuel}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <br/>
+    <br/>
+    <table>
+        {% for key, value in info.items %}
+        <tr >
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>

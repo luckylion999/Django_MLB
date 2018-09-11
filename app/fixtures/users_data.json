@@ -1,0 +1,110 @@
+[
+{
+    "fields": {
+        "username": "devin",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-09-10T18:20:29",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$NbOEyKwbtWfR$edgI27Ml2h6zdoIojv0VZrmWizL6pow2WEYsdwu2e00=",
+        "email": "devin@918.software",
+        "date_joined": "2015-09-08T20:52:54"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "username": "tony@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$NL7lzgu60ANQ$B+VmK3LCgt0PAXuNXyUCVwBcFhlnMQQv7pMZi1EMWu0=",
+        "email": "",
+        "date_joined": "2015-09-18T20:36:57"
+    },
+    "model": "auth.user",
+    "pk": 2
+},
+{
+    "fields": {
+        "username": "ryan@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$UCs2uWA8lBHF$UFovf7Dk54By3RuVObqE45AlgJg8s5ehtmSnihBbFYQ=",
+        "email": "",
+        "date_joined": "2015-09-18T20:37:44"
+    },
+    "model": "auth.user",
+    "pk": 3
+},
+{
+    "fields": {
+        "username": "bill.nelson@spinvestment.net",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$dQhr2ZKOMZqs$wYEiTifeeNPhXlpqyBkzDchEpOp2WJD9JOMFKtXoX04=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:12"
+    },
+    "model": "auth.user",
+    "pk": 4
+},
+{
+    "fields": {
+        "username": "dan@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$UO6eEp52M8a3$I32PUMtYf8Hw/FIOfGXWO9fAGez++kiN9zt+Bq+bYgE=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:33"
+    },
+    "model": "auth.user",
+    "pk": 5
+},
+{
+    "fields": {
+        "username": "devin@gitwitcreative.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$JdxdVYvnsDsn$dBb38TCCCq1bp5bcJenMTP91fWhCIIvqMMRkgW6pNpY=",
+        "email": "",
+        "date_joined": "2015-09-18T20:38:47"
+    },
+    "model": "auth.user",
+    "pk": 6
+}
+]

@@ -1,0 +1,5 @@
+GW proposed workflow:
+
+Notify user of what they would have won (if playing free match) at the end of week one.
+
+(User can change lineup at the end of week one.)
